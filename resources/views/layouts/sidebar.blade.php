@@ -60,10 +60,16 @@
                 <li class="menu-title">@lang('translation.Apps')</li>
 
                 <li>
-                    <a href="calendar" class="waves-effect">
-                        <i class="uil-calender"></i>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="uil-window-section"></i>
                         <span>@lang('translation.Calendar')</span>
                     </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="calendar">@lang('translation.Calendar')</a></li>
+                        <li><a href="calendars">@lang('translation.Import')</a></li>
+                        <li><a href="layouts-calendar-export">@lang('translation.Export')</a></li>
+                        <li><a href="layouts-booking">@lang('translation.Booking')</a></li>
+                    </ul>
                 </li>
 
                 <li>

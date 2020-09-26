@@ -8,7 +8,6 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-// use Socialite;
 // use App\SocialProvider;
 
 class RegisterController extends Controller

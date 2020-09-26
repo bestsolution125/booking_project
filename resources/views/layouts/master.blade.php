@@ -6,7 +6,7 @@
         @include('layouts.head')
     </head>
 
-<body>
+<body class='nono'>
     <!-- Begin page -->
     <div id="layout-wrapper">
             @include('layouts.topbar')
