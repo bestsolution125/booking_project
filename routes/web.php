@@ -23,11 +23,9 @@ Route::get('index/{locale}', 'HomeController@lang');
 // Route::get('auth/{provider}', 'Auth\RegisterController@redirectToProvider');
 // Route::get('auth/{provider}/callback', 'Auth\RegisterController@handleProviderCallback');
 
-// Route::get('/login/{social}', 'Auth\LoginController@socialLogin')->where('social','twitter|facebook|linkedin|google|github|bitbucket');
-// Route::get('/login/{social}/callback', 'Auth\LoginController@handleProviderCallback')->where('social', 'twitter|facebook|linkedin|google|github|bitbucket');
 
-Route::get('/facebook/redirect', 'SocialAuthController@redirect');
-Route::get('/facebook/callback', 'SocialAuthController@callback');
+Route::get('/auth/redirect/{provider}', 'SocialController@redirect')->where('provider','twitter|facebook|linkedin|google|github|bitbucket');
+Route::get('/callback/{provider}', 'SocialController@callback')->where('provider', 'twitter|facebook|linkedin|google|github|bitbucket');
 
 Route::get('/', 'HomeController@root');
 
