@@ -85,17 +85,17 @@ Register
 
                                     <ul class="list-inline">
                                         <li class="list-inline-item">
-                                            <a href="{{ url('/facebook/redirect') }}" class="social-list-item bg-primary text-white border-primary">
+                                            <a href="{{ url('/auth/redirect/facebook') }}" class="social-list-item bg-primary text-white border-primary">
                                                 <i class="mdi mdi-facebook"></i>
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="{{ url('login/twitter') }}" class="social-list-item bg-info text-white border-info">
+                                            <a href="{{ url('/auth/redirect/twitter') }}" class="social-list-item bg-info text-white border-info">
                                                 <i class="mdi mdi-twitter"></i>
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
-                                            <a href="{{ url('login/google') }}" class="social-list-item bg-danger text-white border-danger">
+                                            <a href="{{ url('/auth/redirect/google') }}" class="social-list-item bg-danger text-white border-danger">
                                                 <i class="mdi mdi-google"></i>
                                             </a>
                                         </li>
